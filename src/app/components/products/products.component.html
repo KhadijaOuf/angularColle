@@ -1,0 +1,20 @@
+<div class="container" style="margin-top: 4rem; margin-bottom: 5rem;">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let product of products">
+            <div class="card">
+                <div class="img-container">
+                    <img class="card-img-top" [src]="product.image" alt="Card image" style="padding: 15px;">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{ product.name }}</h4>
+                    <p class="card-text">Crafted with organic and gentle ingredients</p>
+                    <div class="d-flex justify-content-center mt-2">
+                        <button href="#" class="btn" (click)="addToCart(product)">
+                            <i class="bi bi-bag-plus-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

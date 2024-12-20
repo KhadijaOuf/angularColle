@@ -1,0 +1,17 @@
+.contact-form {
+    max-width: 800px;
+    width: 100%;
+    padding: 1cm;
+    margin-bottom: 3cm;
+    margin-top: 0.5cm;
+    background-color: #dcd5c3;
+    border-radius: solid 8px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2cm;
+}

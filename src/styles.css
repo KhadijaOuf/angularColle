@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --border-color: #f7e4cef1;
+    --green-color: #bdb5a3;
+}
+
+body {
+    background-color: rgb(250, 240, 223);
+    font-family: Arial, sans-serif;
+
+}
+
+.button {
+    border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: Poppins;
+    font-weight: 680;
+}
+
+h4 {
+    font-weight: 700;
+}

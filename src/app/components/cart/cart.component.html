@@ -1,0 +1,30 @@
+<div class="container" style="margin-top: 40px;">
+    <div *ngIf="cart.length > 0; else emptyCart">
+        <table class="table .table-secondary">
+            <thead>
+                <tr>
+                    <th>Nom du produit</th>
+                    <th>Prix unitaire</th>
+                    <th>Quantité</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of cart">
+                    <td>{{ product.name }}</td>
+                    <td>${{ product.price }}</td>
+                    <td>{{ product.quantity }}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" (click)="removeFromCart(product)">Supprimer</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="total fw-bold mt-3">Total : ${{ getTotal() }}</h4>
+        <br><br>
+    </div>
+
+    <ng-template #emptyCart>
+        <p class="text-center" style=" margin-top: 3cm;margin-bottom: 5cm;">Votre panier est vide.</p>
+    </ng-template>
+</div>
